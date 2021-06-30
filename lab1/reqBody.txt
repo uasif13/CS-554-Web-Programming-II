@@ -1,0 +1,12 @@
+{
+    "title": "Inception",
+    "cast": [{"firstName": "Leonardo", "lastName": "Di Caprio"}, {"firstName": "Joseph", "lastName": "Gordon-Levitt"}],
+    "info": {"director": "Christopher Nolan", "yearReleased": 2010},
+    "plot": "Dream inside of a dream",
+    "rating": 5
+}
+{
+    "name": "Asif",
+    "comment" : "This movie is amazing"
+}
+602d8992729a033675a76fc6

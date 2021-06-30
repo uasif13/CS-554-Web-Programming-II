@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asif Uddin's Movie Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/styles.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="navandcards">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 bg-dark" id="sideNav">
+          <h1>Movie Links</h1>
+          <ul id="movieList">
+            <li class="nav-item">
+              <a class="movieLink" href="#titanic">Titanic</a>
+            </li>
+            <li class="nav-item"><a class="movieLink" href="#et">E.T.</a></li>
+            <li class="nav-item">
+              <a class="movieLink" href="#wizardofoz">The Wizard of Oz</a>
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#thelastjedi"
+                >Star Wars Episode VIII: The Last Jedi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#terminator">Terminator 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#godfather">The Godfather</a>
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#indianajones"
+                >Indiana Jones: Raiders of the Lost Arc</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#shawshank"
+                >The Shawshank Redemption</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#darkknight">The Dark Knight</a>
+            </li>
+            <li class="nav-item">
+              <a class="movieLink" href="#inception">Inception</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-9" id="cards">
+          <h1>Movie Details</h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="titanic">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/titanic.png"
+                  alt="Titanic Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Titanic</h2>
+                  <p>
+                    A thief who steals corporate secrets through the use of
+                    dream-sharing technology is given the inverse task of
+                    planting an idea into the mind of a C.E.O.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalTitanic"
+                  >
+                    Further details of Titanic
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="et">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/et.jpeg"
+                  alt="ET Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">E.T.</h2>
+                  <p>
+                    A troubled child summons the courage to help a friendly
+                    alien escape Earth and return to his home world.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalET"
+                  >
+                    Further details of E.T.
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="wizardofoz">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/Wizardofoz.jpg"
+                  alt="Wizard of Oz Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">The Wizard of Oz</h2>
+                  <p>
+                    Dorothy Gale is swept away from a farm in Kansas to a
+                    magical land of Oz in a tornado and embarks on a quest with
+                    her new friends to see the Wizard who can help her return
+                    home to Kansas and help her friends as well.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalWizardofoz"
+                  >
+                    Further details of The Wizard of Oz
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="thelastjedi">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/Thelastjedi.jpg"
+                  alt="The Last Jedi Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Star Wars Episode VIII: The Last Jedi
+                  </h2>
+                  <p>
+                    Rey develops her newly discovered abilities with the
+                    guidance of Luke Skywalker, who is unsettled by the strength
+                    of her powers. Meanwhile, the Resistance prepares for battle
+                    with the First Order.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalThelastjedi"
+                  >
+                    Further details of The Last Jedi
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="terminator">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/terminator.jpeg"
+                  alt="Terminator Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Terminator II</h2>
+                  <p>
+                    A cyborg, identical to the one who failed to kill Sarah
+                    Connor, must now protect her ten year old son, John Connor,
+                    from a more advanced and powerful cyborg.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalTerminator"
+                  >
+                    Further details of Terminator II
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="godfather">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/godfather.jpg"
+                  alt="Godfather Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">The Godfather</h2>
+                  <p>
+                    An organized crime dynasty's aging patriarch transfers
+                    control of his clandestine empire to his reluctant son.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalGodfather"
+                  >
+                    Further details of The Godfather
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="indianajones">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/Indianajones.jpg"
+                  alt="Indiana Jones Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Indiana Jones and the Raiders of the Lost Ark
+                  </h2>
+                  <p>
+                    In 1936, archaeologist and adventurer Indiana Jones is hired
+                    by the U.S. government to find the Ark of the Covenant
+                    before Adolf Hitler's Nazis can obtain its awesome powers.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalIndianajones"
+                  >
+                    Further details of Indiana Jones
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="shawshank">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/shawshank.jpg"
+                  alt="Shawshank Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">The Shawshank Redemption</h2>
+                  <p>
+                    Two imprisoned men bond over a number of years, finding
+                    solace and eventual redemption through acts of common
+                    decency.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalShawshank"
+                  >
+                    Further details of Shawshank Redemption
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="darkknight">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/darkknight.jpg"
+                  alt="Dark Knight Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">The Dark Knight</h2>
+                  <p>
+                    When the menace known as the Joker wreaks havoc and chaos on
+                    the people of Gotham, Batman must accept one of the greatest
+                    psychological and physical tests of his ability to fight
+                    injustice.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalDarkknight"
+                  >
+                    Further details of The Dark Knight
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <div class="card" id="inception">
+                <img
+                  class="card-img-top"
+                  src="/public/minImages/inception.jpg"
+                  alt="Inception Movie Image"
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Inception</h2>
+                  <p>
+                    A thief who steals corporate secrets through the use of
+                    dream-sharing technology is given the inverse task of
+                    planting an idea into the mind of a C.E.O.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#modalInception"
+                  >
+                    Further details of Inception
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalTitanic"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitanicTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalTitanicTitle">Titanic</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              James Cameron's "Titanic" is an epic, action-packed romance set
+              against the ill-fated maiden voyage of the R.M.S. Titanic; the
+              pride and joy of the White Star Line and, at the time, the largest
+              moving object ever built. She was the most luxurious liner of her
+              era -- the "ship of dreams" -- which ultimately carried over 1,500
+              people to their death in the ice cold waters of the North Atlantic
+              in the early hours of April 15, 1912.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Leonardo DiCaprio as Jack Dawson</li>
+              <li>Kate Winslet as Rose Bukater</li>
+              <li>Billy Zane as Caledon Hockley</li>
+              <li>Kathy Bates as Molly Brown</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>3h 15m</p>
+            <p><strong>Director</strong></p>
+            <p>James Cameron</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalET"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalETTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalETTitle">E.T.</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              After a gentle alien becomes stranded on Earth, the being is
+              discovered and befriended by a young boy named Elliott (Henry
+              Thomas). Bringing the extraterrestrial into his suburban
+              California house, Elliott introduces E.T., as the alien is dubbed,
+              to his brother and his little sister, Gertie (Drew Barrymore), and
+              the children decide to keep its existence a secret. Soon, however,
+              E.T. falls ill, resulting in government intervention and a dire
+              situation for both Elliott and the alien.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Henry Thomas as Elliot</li>
+              <li>Dee Wallace as Mary</li>
+              <li>Peter Coyote as Keys</li>
+              <li>Drew Barrymore as Gertie</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>1h 55m</p>
+            <p><strong>Director</strong></p>
+            <p>Steven Spielberg</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalWizardofoz"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalWizardofozTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalWizardofozTitle">Wizard of Oz</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              When a tornado rips through Kansas, Dorothy (Judy Garland) and her
+              dog, Toto, are whisked away in their house to the magical land of
+              Oz. They follow the Yellow Brick Road toward the Emerald City to
+              meet the Wizard, and en route they meet a Scarecrow (Ray Bolger)
+              that needs a brain, a Tin Man (Jack Haley) missing a heart, and a
+              Cowardly Lion (Bert Lahr) who wants courage. The wizard asks the
+              group to bring him the broom of the Wicked Witch of the West
+              (Margaret Hamilton) to earn his help.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Judy Garland as Dorothy Gale</li>
+              <li>Frank Morgan as The Wizard of Oz</li>
+              <li>Ray Bolger as Scarecrow</li>
+              <li>Billie Burke as Glinda</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>1h 41m</p>
+            <p><strong>Director</strong></p>
+            <p>Victor Fleming</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalThelastjedi"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalThelastjediTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalThelastjediTitle">
+              The Last Jedi
+            </h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Luke Skywalker's peaceful and solitary existence gets upended when
+              he encounters Rey, a young woman who shows strong signs of the
+              Force. Her desire to learn the ways of the Jedi forces Luke to
+              make a decision that changes their lives forever. Meanwhile, Kylo
+              Ren and General Hux lead the First Order in an all-out assault
+              against Leia and the Resistance for supremacy of the galaxy.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Mark Hamil as Luke Skywalker</li>
+              <li>Carrie Fisher as Leia</li>
+              <li>Adam Driver as Kylo Ren</li>
+              <li>Daisy Ridley as Rey</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 32m</p>
+            <p><strong>Director</strong></p>
+            <p>Rian Johnson</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalTerminator"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTerminatorTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalTerminatorTitle">Terminator II</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              In this sequel set eleven years after "The Terminator," young John
+              Connor (Edward Furlong), the key to civilization's victory over a
+              future robot uprising, is the target of the shape-shifting T-1000
+              (Robert Patrick), a Terminator sent from the future to kill him.
+              Another Terminator, the revamped T-800 (Arnold Schwarzenegger),
+              has been sent back to protect the boy. As John and his mother
+              (Linda Hamilton) go on the run with the T-800, the boy forms an
+              unexpected bond with the robot.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Arnold Schwarzenegger as The Terminator</li>
+              <li>Linda Hamilton as Sarah Connor</li>
+              <li>Edward Furlong as John Connor</li>
+              <li>Robert Patrick as T-1000</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 16m</p>
+            <p><strong>Director</strong></p>
+            <p>James Cameron</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalGodfather"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalGodfatherTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalGodfatherTitle">Godfather</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Widely regarded as one of the greatest films of all time, this mob
+              drama, based on Mario Puzo's novel of the same name, focuses on
+              the powerful Italian-American crime family of Don Vito Corleone
+              (Marlon Brando). When the don's youngest son, Michael (Al Pacino),
+              reluctantly joins the Mafia, he becomes involved in the inevitable
+              cycle of violence and betrayal. Although Michael tries to maintain
+              a normal relationship with his wife, Kay (Diane Keaton), he is
+              drawn deeper into the family business.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Marlon Brando as Don Vito Corleone</li>
+              <li>Al Pacino as Michael Corleone</li>
+              <li>James Caan as Santino Corleone</li>
+              <li>Richard Castellano as Pete Clemenza</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 57m</p>
+            <p><strong>Director</strong></p>
+            <p>Francis Ford Coppola</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalShawshank"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalShawshankTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalShawshankTitle">
+              The Shawshank Redemption
+            </h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Andy Dufresne (Tim Robbins) is sentenced to two consecutive life
+              terms in prison for the murders of his wife and her lover and is
+              sentenced to a tough prison. However, only Andy knows he didn't
+              commit the crimes. While there, he forms a friendship with Red
+              (Morgan Freeman), experiences brutality of prison life, adapts,
+              helps the warden, etc., all in 19 years.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Tim Robbins as Andy Dufresne</li>
+              <li>Morgan Freeman as Ellis Redding</li>
+              <li>Bob Gunton as Warden Norton</li>
+              <li>William Sadler as Heywood</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 22m</p>
+            <p><strong>Director</strong></p>
+            <p>Frank Darabont</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalDarkknight"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalDarkknightTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalDarkknightTitle">
+              The Dark Knight
+            </h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey
+              Dent (Aaron Eckhart), Batman (Christian Bale) has been able to
+              keep a tight lid on crime in Gotham City. But when a vile young
+              criminal calling himself the Joker (Heath Ledger) suddenly throws
+              the town into chaos, the caped Crusader begins to tread a fine
+              line between heroism and vigilantism.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Christian Bale as Batman</li>
+              <li>Heath Ledger as The Joker</li>
+              <li>Aaron Eckhart as Harvey Dent</li>
+              <li>Michael Caine as Alfred</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 32m</p>
+            <p><strong>Director</strong></p>
+            <p>Christopher Nolan</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalIndianajones"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalIndianajonesTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalIndianajonesTitle">
+              Indiana Jones: Raiders of the Lost Ark
+            </h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Dr. Indiana Jones, a renowned archeologist and expert in the
+              occult, is hired by the U.S. Government to find the ark of the
+              covenant, which is believed to still hold the Ten Commandments.
+              Unfortunately, Hitler's agents are also after the ark. Indy and
+              his ex-flame Marion escape from various close scrapes in a quest
+              that takes them from Nepal to Cairo.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Harrison Ford as Indiana Jones</li>
+              <li>Karen Allen as Marion Ravenwood</li>
+              <li>Paul Freeman as Rene Belloq</li>
+              <li>Wolf Kahler as Dietrich</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>1h 55m</p>
+            <p><strong>Director</strong></p>
+            <p>Steven Spielberg</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalInception"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalInceptionTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalInceptionTitle">Inception</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to
+              enter people's dreams and steal their secrets from their
+              subconscious. His skill has made him a hot commodity in the world
+              of corporate espionage but has also cost him everything he loves.
+              Cobb gets a chance at redemption when he is offered a seemingly
+              impossible task: Plant an idea in someone's mind. If he succeeds,
+              it will be the perfect crime, but a dangerous enemy anticipates
+              Cobb's every move.
+            </p>
+            <p><strong>Cast</strong></p>
+            <ul>
+              <li>Leonardo DiCaprio as Dom Cobb</li>
+              <li>Joseph Gordon-Levitt as Arthur</li>
+              <li>Ellen Page as Ariadne</li>
+              <li>Tom Hardy as Eames</li>
+            </ul>
+            <p><strong>Runtime</strong></p>
+            <p>2h 28m</p>
+            <p><strong>Director</strong></p>
+            <p>Christopher Nolan</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/public/js/vendor.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@import "variables";
+@import "../styles/bootstrap/scss/bootstrap.scss";
+
+#sideNav {
+  color: white;
+}
+
+#movieList {
+  list-style-type: none;
+  padding-inline-start: 1rem;
+}
+.nav-item {
+  border-bottom: 2px solid #ffd700;
+}
+
+.movieLink {
+  color: #add8e6;
+}
+.movieLink:hover {
+  color: blue;
+}
+#cards {
+  background-color: #e9181f;
+}
+
+.card {
+  padding-bottom: 1rem;
+}
