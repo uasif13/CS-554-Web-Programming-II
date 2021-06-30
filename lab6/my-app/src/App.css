@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.App-logo {
+  height: 10vh;
+  display: inline-block;
+}
+
+.App-header {
+  text-align: left;
+  background-color: #4b4b4b;
+  min-height: 10vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+.App-title {
+  display: inline-block;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-body {
+  background-color: #c4c4c4;
+  min-height: 100vh;
+}
+
+.imagepost {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.highlighted {
+  color: #0038ff;
+  text-decoration: underline;
+}
+
+.navlink {
+  color: black;
+}
+
+.postText {
+  text-align: left;
+  font-size: small;
+  margin-bottom: 0px;
+}
+
+.binned {
+  color: white;
+  background-color: #e35b5b;
+  margin: 1rem;
+  border-style: none;
+}
+
+.uploadLink {
+  border-style: none;
+  color: white;
+  background-color: #e35b5b;
+  margin: 1rem;
+}
+
+.uploadLinkText {
+  color: white;
+}
+
+.nav li::after {
+  content: "|";
+  float: "right";
+  color: black;
+}
+
+.nav li:last-child::after {
+  display: none;
+}
+
+.nav {
+  color: black;
+  padding-top: 1rem;
+}
+
+.refreshUnsplash {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  background-color: #6cace7;
+  transform: scale(0.75);
+  border-style: none;
+}
+
+.currentPage {
+  color: #0038ff;
+}
+
+.notPage {
+  color: black;
+}
+
+#newpostTitle {
+  text-decoration: underline;
+  font-size: x-large;
+}
+
+.inputBox {
+  background-color: #c4c4c4;
+  border-style: none;
+}
+
+.labels {
+  font-size: larger;
+}
+
+.delete {
+  border: none;
+  background: none;
+  padding: 0;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}

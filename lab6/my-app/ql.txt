@@ -1,0 +1,38 @@
+mutation userimage($url: String!, $posterName: String, $description: String) {
+  uploadImage(url: $url, description: $description, posterName: $posterName) {
+    id
+    url
+    posterName
+    description
+    userPosted
+    binned
+  }
+}
+{
+  "url": "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
+  "description": "elephant",
+  "posterName": "hat rabbits"
+}
+mutation updateimage($id: ID!, $url: String, $posterName: String, $description: String, $userPosted: Boolean, $binned: Boolean) {
+  updateImage(id: $id, url: $url, description: $description, posterName: $posterName, userPosted: $userPosted, binned: $binned) {
+    id
+    url
+    posterName
+    description
+    userPosted
+    binned
+  }
+}
+{
+  "id": "df552549-6a37-43eb-8411-546928fb0035",
+  "posterName": "Asif Uddin",
+  "binned": true
+}
+mutation userimage($id: ID!) {
+  deleteImage(id: $id) {
+    url
+    posterName
+    description
+    userPosted
+  }
+}
